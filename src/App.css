@@ -1,0 +1,34 @@
+import React from 'react';
+import styled from 'styled-components';
+
+const IframeContainer = styled.div`
+  width: 100%; /* Adjust width as needed */
+  margin: 1px auto; /* Add margin for spacing */
+  border: none; /* Remove border */
+  border-radius: 0px; /* Add rounded corners (optional) */
+  background-color: #0e0d17; /* Set background color */
+  padding-bottom: 56.25%; /* Maintain aspect ratio for responsive sizing */
+  position: relative; /* Needed for responsive iframe height */
+  overflow: hidden; /* Hide scrollbar visually */
+`;
+
+const StyledIframe = styled.iframe`
+  position: absolute; /* Make iframe fill container (prevents horizontal scroll) */
+  top: 0; /* Position iframe at the top */
+  left: 0; /* Position iframe at the left */
+  width: 100%; /* Make iframe fill container width */
+  height: 100%; /* Make iframe fill container height (adjust as needed) */
+`;
+
+const ResponsiveIframe = () => {
+  return (
+    <IframeContainer>
+      <StyledIframe
+        src="https://zastixx-vx1000.hf.space/"
+        frameBorder="0"
+      ></StyledIframe>
+    </IframeContainer>
+  );
+};
+
+export default ResponsiveIframe;
