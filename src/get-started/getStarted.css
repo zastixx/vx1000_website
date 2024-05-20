@@ -1,0 +1,16 @@
+@media (max-width: 768px) {
+  .h1 {
+    font-size: 3rem!important;
+    padding: 0 1rem;
+  }
+
+  h2 {
+    font-size: 15px!important;
+    padding: 0 1rem;
+  }
+
+  button {
+    font-size: 1rem!important;
+  }
+
+}

@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+    .auth-container {
+        gap: 2px!important;
+        width: 250px!important;
+    }
+
+    h2 {
+        font-size: 15px!important;
+    }
+
+    .google-auth-logo {
+        width: 25px!important;
+    }
+}
